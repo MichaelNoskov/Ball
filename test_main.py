@@ -12,7 +12,7 @@ test_data = [
 
 
 @pytest.mark.parametrize('angle, expected', test_data)
-def test_degree_ball(angle: float, expected: int) -> None:
+def test_degree_ball(angle: float, expected: float) -> None:
     """Test degree function with data.
 
     Args:
