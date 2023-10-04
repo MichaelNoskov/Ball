@@ -16,12 +16,10 @@ def test_degree_ball(angle: float, expected: int) -> None:
     """Test degree function with data.
 
     Args:
-        radius: float, ball radius.
-        acceleration: float, acceleration of the ball as it rolls.
-        time: float, the time he's been rolling.
-        velocity: float, initial speed.
+        angle: float, angle of shifting the ball
+        excepted: an actual expected degree result.
 
     Asserts:
-        Float angle of shifting the ball.
+        float angle of shifting the ball.
     """
     assert degree(*angle) == expected
