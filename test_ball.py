@@ -11,13 +11,13 @@ test_data = [
 ]
 
 
-@pytest.mark.parametrize('angle, excepted', test_data)
+@pytest.mark.parametrize('angle, expected', test_data)
 def test_degree_ball(angle: float, expected: int) -> None:
     """Test degree function with data.
 
     Args:
         angle: float, angle of shifting the ball
-        excepted: an actual expected degree result.
+        expected: an actual expected degree result.
 
     Asserts:
         float angle of shifting the ball.
