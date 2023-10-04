@@ -14,6 +14,8 @@ def degree(radius: float, acceleration: float, time: float, velocity: float = 0)
     Returns:
         Float angle of shifting the ball.
     """
+    if radius == 0:
+        return 0
     circle = 360
     road = velocity * time + acceleration * time ** 2 / 2
     ball_len = 2 * pi * radius
